@@ -16,7 +16,7 @@
           <text value="Ingrese el número1"/>
         </properties>
       </component>
-      <component id="28864" class="javax.swing.JTextField" binding="text1">
+      <component id="28864" class="javax.swing.JTextField" binding="numero1textField1">
         <constraints>
           <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
             <preferred-size width="150" height="-1"/>
@@ -32,7 +32,7 @@
           <text value="Ingrese el número 2"/>
         </properties>
       </component>
-      <component id="fbefa" class="javax.swing.JTextField" binding="text2">
+      <component id="fbefa" class="javax.swing.JTextField" binding="numero2textField1">
         <constraints>
           <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
             <preferred-size width="150" height="-1"/>
@@ -166,6 +166,14 @@
         </constraints>
         <properties>
           <text value="Factorial"/>
+        </properties>
+      </component>
+      <component id="1b5ca" class="javax.swing.JLabel" binding="resultadolb">
+        <constraints>
+          <grid row="3" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Resultado"/>
         </properties>
       </component>
     </children>

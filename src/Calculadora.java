@@ -1,13 +1,12 @@
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.util.Objects;
 
 public class Calculadora {
     private JLabel label1;
-    private JTextField text1;
+    private JTextField numero1textField1;
     private JLabel label2;
-    private JTextField text2;
+    private JTextField numero2textField1;
     private JButton sumaButton;
     private JButton restaButton;
     private JButton xButton;
@@ -25,6 +24,7 @@ public class Calculadora {
     private JButton raizEnésimaButton;
     private JButton potenciaEnésimaButton;
     public JPanel menuPrincipal;
+    private JLabel resultadolb;
 
 
     public Calculadora() {
@@ -32,7 +32,11 @@ public class Calculadora {
         sumaButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-
+                if ((numero1textField1.getText().matches("[0-9]+")) & (numero2textField1.getText().matches("[0-9]+"))) {
+                    resultadolb.setText("Resultado: "+Integer.toString(Integer.parseInt(numero1textField1.getText())+Integer.parseInt(numero2textField1.getText())));
+                }else {
+                    resultadolb.setText("Resultado: El string tiene caracteres no numericos");
+                }
             }
         });
         restaButton.addActionListener(new ActionListener() {
@@ -41,7 +45,7 @@ public class Calculadora {
 
             }
         });
-        
+
         xButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
